@@ -2,9 +2,17 @@
 
 Лоадер для ПК и Android external под Oxide 1.13.11924 ARM64.
 
-**[Скачать OxideLoader.exe 0.2.2](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.2/OxideLoader.exe)** · [Релиз](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.2)
+**[Скачать OxideLoader.exe 0.2.3](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.3/OxideLoader.exe)** · [Релиз](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.3)
 
 ![Игровое меню WIN ALIEN 0.2.2 — тестовый рендер](menu.png)
+
+## Исправление 0.2.3
+
+Устранено лишнее требование Transaction-функций libgui на Android 9–11 при создании меню. Эти функции вызываются только на Android 12 и новее, как в исходном Overlay. При ошибке журнал теперь показывает версию Android, API, ABI, UID и конкретную недостающую функцию libgui либо этап EGL.
+
+Запуск через встроенный BlueStacks `/system/xbin/bstk/su` поддерживался и раньше; отдельный Magisk не требуется. Добавлены явное сообщение о выбранном способе запуска и автоматическая проверка этого сценария. Пять наборов тестов и проверка запуска EXE пройдены; результат на эмуляторе тестера ещё не подтверждён.
+
+Для обновления останови старый external, запусти новый EXE, нажми «Скачать файлы», затем «Старт external».
 
 ## Где находится меню
 
@@ -15,7 +23,7 @@
 ## Запуск
 
 1. Сохрани новый EXE в отдельную папку.
-2. Запусти 64-битный Android-эмулятор с root, ADB и игрой Oxide 11924 ARM64.
+2. Запусти 64-битный Android-эмулятор с ADB и игрой Oxide 11924 ARM64. Бинарнику нужны права UID 0 внутри эмулятора; в BlueStacks лоадер использует встроенный `/system/xbin/bstk/su`.
 3. В лоадере укажи ADB-порт и нажми «Старт external». Файлы скачиваются из этого релиза с проверкой размера и SHA-256.
 4. Нажми «Открыть Oxide». Меню должно появиться внутри эмулятора; оно открывается сразу при старте бинарника.
 5. **Insert** — открыть/закрыть меню, **F6** — ESP. При закрытом меню в эмуляторе остаётся кнопка **WIN**.
