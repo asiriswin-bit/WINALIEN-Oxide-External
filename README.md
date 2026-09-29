@@ -1,8 +1,10 @@
 # WIN ALIEN — Oxide external
 
-Тестовая **0.2.20**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.20). Коллекция 855 скинов для 70 предметов, 724 превью в отдельном атласе, поиск, категории и CFG. Добавлено экспериментальное локальное применение оружия и экипировки; постройки пока только для просмотра. Fast Bullets меняет поле трассера/локального hit FX; ускорение серверного урона не подтверждено.
+Тестовая **0.2.21**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.21). Исправлена загрузка старого бинарника с заглушкой «Смена скинов — не реализовано»: версия релиза закреплена внутри EXE и проверяется перед запуском, а номер сборки виден в игровом меню.
 
-Для 0.2.20 скачай полный **PC.zip** либо **Online.zip**. В Online ZIP оставь рядом с EXE файл `github-release.txt`: он закрепляет тестовый релиз и отделяет его кэш от latest. Один EXE по ссылке latest ниже по-прежнему относится к 0.2.19. Игровая проверка новых скинов ещё требуется. Сборка, 20 локальных тестов и DX11-проверки интерфейса при масштабе 100%/150% пройдены.
+Скачай [новый OxideLoader.exe](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.21/OxideLoader.exe) в новую папку либо полный PC ZIP. Вспомогательный `github-release.txt` больше не нужен. EXE скачивает только файлы своей версии и не возвращается к старому latest.
+
+Коллекция: 855 скинов для 70 предметов, 724 превью в отдельном атласе, поиск, категории и CFG. Применение оружия/экипировки экспериментальное, постройки пока только для просмотра. Fast Bullets меняет поле трассера/локального hit FX; ускорение серверного урона не подтверждено. Игровая проверка новых скинов ещё требуется.
 
 ![Коллекция скинов — локальная UI-сцена без запущенной игры](skins.png)
 
@@ -22,7 +24,7 @@
 
 Исходники — `OxideExternal-11924-source.zip`. Сборка: `powershell -File build.ps1` с Visual Studio C++ Desktop, CMake и Android NDK r27c. `-SkipPayload` пропускает Android-сборку, `-SkipTests` пропускает CTest. ARM64-бинарник собирается для совместимости пакета; игровые функции этого релиза рассчитаны на x86_64.
 
-[Скачать лоадер](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/latest/download/OxideLoader.exe)
+[Скачать лоадер 0.2.21](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.21/OxideLoader.exe)
 
 ![Русский интерфейс — синтетическая сцена](menu.png)
 
