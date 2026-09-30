@@ -1,10 +1,10 @@
 # WIN ALIEN — Oxide external
 
-Тестовая **0.2.22**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.22).
+Диагностическая **0.2.23**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.23).
 
-Добавлен пропущенный этап применения скина оружия при загрузке модели. Улучшены поиск ожидающих задач и сохранение причин отказа для оружия и экипировки. Проверки на моделируемой памяти пройдены; результат в игре требует проверки тестером.
+Повторно сверены дамп и машинный код 11924 x86_64: 33 опорные инструкции совпали. В журнал добавлены причины ранних отказов и адреса методов продолжения, которые прежняя диагностика не показывала. Причина отсутствия применения скинов пока не установлена; эта сборка предназначена для её проверки. Сборка и 20/20 локальных тестов пройдены.
 
-Скачай [новый OxideLoader.exe 0.2.22](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.22/OxideLoader.exe) в новую папку либо полный PC ZIP. Старый EXE закреплён за своей версией и не скачает 0.2.22. Вспомогательный github-release.txt не нужен.
+Скачай [новый OxideLoader.exe 0.2.23](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.23/OxideLoader.exe) или Online ZIP в новую папку: runtime и атлас загрузятся с GitHub с проверкой SHA-256. Для запуска с локальными файлами есть полный PC ZIP. Старый EXE закреплён за своей версией и не скачает 0.2.23. Вспомогательный github-release.txt не нужен.
 
 Включи «Скины у себя», выбери скин, закрой меню и переключи оружие туда-обратно. Для одежды сними и повторно надень предмет. Карточка сохраняет выбор сразу; отдельной кнопки «Применить» нет. После проверки сохрани oxide-runtime.log кнопкой лоадера.
 
@@ -20,7 +20,7 @@
 
 Исходники — `OxideExternal-11924-source.zip`. Сборка: `powershell -File build.ps1` с Visual Studio C++ Desktop, CMake и Android NDK r27c. `-SkipPayload` пропускает Android-сборку, `-SkipTests` пропускает CTest. ARM64-бинарник собирается для совместимости пакета; игровые функции этого релиза рассчитаны на x86_64.
 
-[Скачать лоадер 0.2.22](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.22/OxideLoader.exe)
+[Скачать лоадер 0.2.23](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.23/OxideLoader.exe)
 
 ![Русский интерфейс — синтетическая сцена](menu.png)
 
