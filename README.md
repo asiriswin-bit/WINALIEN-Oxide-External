@@ -1,12 +1,14 @@
 # WIN ALIEN — Oxide external
 
-Версия **0.2.25**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.25).
+Версия **0.2.26**: [релиз и архивы](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/tag/oxide-11924-v0.2.26).
 
-Исправлено чтение экипировки с учётом двух служебных записей. Добавлены отдельный цвет боксов NPC, остановка автофарма по поверхности ресурса, обработка запоздалых углов Silent и приостановка локальных часов. Сборки и 20 локальных тестов прошли; проверка в игре остаётся за тестером.
+Добавлены Freecam, экспериментальные Noclip и Spider, настройка максимального уклона и высоты шага. По умолчанию всё выключено. Сборки и 21 локальный тест прошли; проверка в игре остаётся за тестером.
+
+Открой «Exploits / Автоматизация → Камера / перемещение», выбери режим и закрой меню. Джойстик — движение, взгляд — направление, прыжок / приседание — вверх / вниз, бег — ускорение. Открытие меню возвращает управление персонажу. Spider требует движения вперёд с взглядом на близкую стену (до 1,6 м). Noclip и Spider могут откатываться сервером; Freecam показывает только уже загруженные объекты.
 
 Скинченджер временно отключён, вкладка «Скины» скрыта. Старый CFG не может активировать функцию. Обработка скинов и её логирование удалены из runtime. Атлас скинов больше не скачивается и не передаётся на эмулятор. Выбранные ранее скины сохранены в CFG для возможного возвращения функции.
 
-Скачай [OxideLoader.exe 0.2.25](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.25/OxideLoader.exe) или Online ZIP в новую папку. Для локального запуска есть полный PC ZIP. Старый EXE закреплён за своей версией и не скачает 0.2.25.
+Скачай [OxideLoader.exe 0.2.26](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.26/OxideLoader.exe) или Online ZIP в новую папку. Для локального запуска есть полный PC ZIP. Старый EXE закреплён за своей версией и не скачает 0.2.26.
 
 Профиль Oxide 1.13.11924 x86_64 для MSI App Player / BlueStacks. Внутренний модуль не загружается.
 
@@ -18,10 +20,12 @@
 
 Исходники — `OxideExternal-11924-source.zip`. Сборка: `powershell -File build.ps1` с Visual Studio C++ Desktop, CMake и Android NDK r27c. `-SkipPayload` пропускает Android-сборку, `-SkipTests` пропускает CTest. ARM64-бинарник собирается для совместимости пакета; игровые функции этого релиза рассчитаны на x86_64.
 
-[Скачать лоадер 0.2.25](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.25/OxideLoader.exe)
+[Скачать лоадер 0.2.26](https://github.com/asiriswin-bit/WINALIEN-Oxide-External/releases/download/oxide-11924-v0.2.26/OxideLoader.exe)
 
 ![Русский интерфейс — синтетическая сцена](menu.png)
 
 ![Автофарм — синтетическая сцена](farm.png)
 
 ![Настройка сбора лута](loot.png)
+
+![Freecam — проверка интерфейса без подключения к игре](freecam.png)
